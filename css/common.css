@@ -398,6 +398,7 @@ address, .footer_nav  a,.c_kepco{
   right: 0px;
   top:100px;
   font-weight: bold;
+  cursor: pointer;
 }
 #url > option{
   color: #333;
@@ -418,7 +419,7 @@ address, .footer_nav  a,.c_kepco{
   color:#111;
   text-decoration: underline;
 }
-.b_bold:hover{
+.b_hover:hover{
   font-weight: 700;
   color:#080396 !important;
 }
