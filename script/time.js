@@ -19,7 +19,7 @@ function updateTime(){
 
   let after;
 
-  if(hour < 12){
+  if(hour <= 12){
     after = w_hour[0];
   }else{
     after = w_hour[1];
