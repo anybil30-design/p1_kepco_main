@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>한국전력공사 메인페이지</title>
+  <title>p1_한국전력공사 메인페이지</title>
   <!-- 1. 초기화 -->
   <link href="./css/reset.css" rel="stylesheet" type="text/css" />   
   <!-- 2. 아이콘 - 폰트어썸 -->
@@ -41,7 +41,7 @@
   
     <!-- 헤더 영역 -->
     <header>
-      <video src="./images/video/kepko_video_first.mp4" autoplay muted loop class="main_video"></video>
+      <video src="./video/kepko_video_first.mp4" autoplay muted loop class="main_video"></video>
       <!-- 비디오 바 -->
       <div class="b_bar">
         <div class="s_bar">
@@ -308,9 +308,9 @@
       
       <div class="side_menu">
         <label for="check_side_nav">
-        <div class="side_nav_btn">
+        <span class="side_nav_btn">
           <img src="./images/icon/header/side_btn.png" alt="화살표">
-        </div>
+        </span>
         </label>
         <aside id="side_nav">
           <ul>
@@ -760,7 +760,7 @@
               <!-- 뉴스6 -->
               <div id="news6" class="short_cont">
                 <!-- 설명 -->
-                <a href="https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do" title="자세히보기" class="news_btn"></a>
+                <a href="https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do" title="자세히보기" class="news_btn">
                   <div class="news_txt_box">
                     <p class="news_txt">한전, 전북 서남권 해상풍력 시범<br/>사업 본격 추진...</p>
                     <!-- 자세히보기 -->
@@ -784,7 +784,7 @@
               <span id="time">&nbsp;</span>
             </div>
             <!-- 더보기 버튼 -->
-            <a href="https://new.kpx.or.kr/powerinfoSubmain.es?mid=a10606030000" tilte="더보기" class="plus l7_btn">
+            <a href="https://new.kpx.or.kr/powerinfoSubmain.es?mid=a10606030000" title="더보기" class="plus l7_btn">
               더보기
             </a>
 
@@ -832,14 +832,13 @@
             <div class="l7_title">
               <h3>전국 본부&#x00B7;사업소 찾기</h3>
             </div>
-            <a href="https://www.kepco.co.kr/home/about/locations.do" tilte="더보기" class="plus l7_btn">
+            <a href="https://www.kepco.co.kr/home/about/locations.do" title="더보기" class="plus l7_btn">
               더보기
             </a>
             <img src="./images/images/layout7/img2.png" alt="전국 본부 사업소 찾기" />
           </article>
         </section>
 
-        <!-- top 버튼 -->
         
         <!-- qr코드 -->
         <article class="qr_box">
@@ -862,7 +861,6 @@
               <img src="./images/images/layout7/qr_code.png" alt="아이폰 다운로드" class="ios_code">
           </div>
         </article>
-      </div>  
     </main>
 
     <!-- 푸터 영역 -->
@@ -877,9 +875,9 @@
         <!-- 하단로고 -->
         <h2>
           <a href="index.html" title="처음으로 바로가기">
-            <div class="footer_logo">
+            <span class="footer_logo">
               <img src="./images/logo/footer_logo.png" alt="하단로고" />
-            </div>
+            </span>
           </a>
         </h2>
         <div class="footer_address">
@@ -1099,7 +1097,7 @@
   <!-- <script>
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-  }; -->
-</script>
+  };
+  </script> -->
 </body>
 </html>
