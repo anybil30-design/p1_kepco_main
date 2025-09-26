@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한국전력공사 메인페이지</title>
+  <!-- 1. 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css" />   
+  <!-- 2. 아이콘 - 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <!-- 3. 스와이퍼 슬라이드 라이브러리 -->
+  <link href="./css/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- 4.공통서식 -->
+  <link href="./css/common.css" rel="stylesheet" type="text/css" />
+  <!-- 5. 메인콘텐츠 서식 -->
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon/favicon_16.ico">
+</head>
+<body>
+  <form name="form" method="post" action="./search.php">
+    <!-- 검색창 -->
+    <input type="checkbox" id="search_toggle" hidden>
+    <!-- 전체메뉴 -->
+    <input type="checkbox" id="menu_toggle" hidden>
+    <!-- 사이드 메뉴 열고 닫기 -->
+    <input type="checkbox" id="check_side_nav" hidden/>
+    <!-- 챗봇 닫기버튼 -->
+    <input type="checkbox" id="close_btn" />
+    <!-- ESG -->
+    <input type="radio" id="E" name="esg" checked hidden/>
+    <input type="radio" id="S" name="esg"  hidden/>
+    <input type="radio" id="G" name="esg"  hidden/>
+    <!-- 자주쓰는 기호 
+      1. / -> &#x002F;
+      2. · -> &#x00B7;
+      3. | -> &#x007C;
+    -->
+  
+    <!-- 헤더 영역 -->
+    <header>
+      <video src="./images/video/kepko_video_first.mp4" autoplay muted loop class="main_video"></video>
+      <!-- 비디오 바 -->
+      <div class="b_bar">
+        <div class="s_bar">
+          &nbsp;
+        </div>
+      </div>
+      <div id="header">
+        <div class="nav_box">
+          <!-- 로고 -->
+          <h1 class="logo">
+            <a href="index.html" title="메인페이지로 바로가기">
+              <img src="./images/logo/header_logo.png" alt="한국전력공사" id="logo_img" />
+            </a>
+          </h1>
+
+          <!-- 상단메뉴 -->
+          <nav id="t_menu">
+            <!-- 1단메뉴 -->
+            <ul class="b_menu">
+              <!-- (1)회사소개 -->
+              <li>
+                <a href="https://www.kepco.co.kr/home/about/introduce/overview.do" title="회사소개">회사소개</a>
+                <!-- 2단메뉴(1) -->
+                <ul class="s_menu">
+                  <li>
+                    <a href="#" title="KEPCO소개">KEPCO소개</a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="조직안내">
+                      조직안내
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="전국 본부&#x00B7;사업소">
+                      전국 본부&#x00B7;사업소
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="투자정보">
+                      투자정보
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="인재채용">
+                      인재채용
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="slash">/</li>
+
+              <!-- (2)전기요금 이용서비스 -->
+              <li>
+                <a href="https://online.kepco.co.kr/" title="전기요금&#x00B7;이용서비스">
+                  전기요금&#x00B7;이용서비스
+                </a>
+                <!-- 2단메뉴(2) -->
+                <ul class="s_menu">
+                  <li>
+                    <a href="#" title="요금 조회/납부">
+                      요금 조회/납부
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="전기 사용량 분석">
+                      전기 사용량 분석
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="요금제 안내">
+                      요금제 안내
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="고지서/결제">
+                      고지서/결제
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="slash">/</li>
+
+              <!-- (3)고객지원 -->
+              <li>
+                <a href="https://www.kepco.co.kr/home/customer/csinformation/conts.do" title="고객지원">
+                  고객지원
+                </a>
+                <!-- 2단메뉴(3) -->
+                <ul class="s_menu">
+                  <li>
+                    <a href="#" title="고장 신고 / 처리 현황">
+                      고장 신고
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="정전 알림 서비스">
+                      정전 알림 서비스
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="자주 묻는 질문">
+                      자주 묻는 질문
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="1:1 문의">
+                      1:1 문의
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="slash">/</li>
+
+              <!-- (4)ESG경영 -->
+              <li>
+                <a href="https://www.kepco.co.kr/home/esg/kepcoesg/esgoverview.do" title="ESG경영">
+                  ESG경영
+                </a>
+                <!-- 2단메뉴(4) -->
+                <ul class="s_menu">
+                  <li>
+                    <a href="#" title="한전의 ESG">
+                      한전의 ESG
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="환경E">
+                      환경E
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="사회S">
+                      사회S
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="지배구조 G">
+                      지배구조 G
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="ESG리포트">
+                      ESG리포트
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="slash">/</li>
+
+              <!-- (5)사업 연구개발 -->
+              <li>
+                <a href="https://www.kepco.co.kr/home/business/transbus.do" title="사업&#x00B7;연구개발">
+                  사업&#x00B7;연구개발
+                </a>
+                <!-- 2단 메뉴(5) -->
+                <ul class="s_menu">
+                  <li>
+                    <a href="#" title="송배전사업">
+                      송배전사업
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="신재생에너지">
+                      신재생에너지
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="판매&#x00B7;수요관리">
+                      판매&#x00B7;수요관리
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="에너지신사업">
+                      에너지신사업
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="해외사업">
+                      해외사업
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- 우측 메뉴 -->
+          <nav class="r_menu">
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/@kepconewmedia" title="한국전력공사 유튜브 바로가기">
+                  <img src="./images/icon/header/header_youtube_icon.svg" alt="한국전력공사 유튜브 바로가기" />
+                  <span class="r_menu_text">유튜브</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.kepco.co.kr/eng/index.do" title="영문페이지로 변경">
+                  <i class="fa-solid fa-globe color_w"></i>
+                  <span class="r_menu_text">ENG</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.kepco.co.kr/home/common/choiceCert.do" title="로그인">
+                  <i class="fa-solid fa-arrow-right-to-bracket color_w"></i>
+                  <span class="r_menu_text">로그인</span>
+                </a>
+              </li>
+
+              <li class="search_open">
+                <label for="search_toggle" class="search_btn">
+                  <i class="fa-solid fa-magnifying-glass color_w"></i>
+                  <span class="r_menu_text">검색</span>
+                </label>
+              </li>
+
+              <li class="search_close">
+                <label for="search_toggle" class="search_btn">
+                  <i class="fa-solid fa-xmark color_w"></i>
+                  <span class="r_menu_text">닫기</span>
+                </label>
+              </li>
+
+              <li>
+                <label for="menu_toggle" class="menu_btn">
+                  <i class="fa-solid fa-bars color_w"></i>
+                  <span class="r_menu_text">전체메뉴</span>
+                </label>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- 검색 메뉴 -->
+      <fieldset class="search">
+        <legend>검색</legend>
+        <div class="search_box">
+          <input type="search" id="site-search" name="q" placeholder="검색어를 입력하세요">
+          <button type="submit" class="search_b">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </fieldset>
+      <!-- 사이드 선택바 -->
+      
+      <div class="side_menu">
+        <label for="check_side_nav">
+        <div class="side_nav_btn">
+          <img src="./images/icon/header/side_btn.png" alt="화살표">
+        </div>
+        </label>
+        <aside id="side_nav">
+          <ul>
+            <li>
+              <a href="#cont1" title="서비스">Services</a>
+            </li>
+            <li>
+              <a href="#cont2" title="ESG">ESG</a>
+            </li>
+            <li>
+              <a href="#cont3" title="비즈니스 공간">Business Area</a>
+            </li>
+            <li>
+              <a href="#cont4" title="소셜 미디어">Social Media</a>
+            </li>
+            <li>
+              <a href="#cont5" title="뉴스 룸">News room</a>
+            </li>
+          </ul>
+        </aside>
+      </div>  
+    </header>
+
+    <!-- 메인컨텐츠 영역 -->
+    <main>
+      <!-- layout1 영역 (메인베너) -->
+      <!-- 챗봇 메뉴 -->
+      <aside class="chatbot">
+          <!-- 말풍선 -->
+          <div id="bubble">
+            <img src="./images/icon/layout1/Union.png" alt="말풍선" class="bubble_bg" />
+            <div class="speech_bubble">
+              <!-- 닫기버튼 -->
+              <label for="close_btn">
+                <img src="./images/icon/layout1/close_icon.png" alt="닫기버튼" />
+              </label>
+              <!-- 글자 -->
+              <div class="speech">
+                <span>도움이 필요하시다면?</span>
+                <a href="https://chat-online.kepco.co.kr/kepcoHappyBot/" title="챗봇문의 바로가기">챗봇문의</a>
+              </div>
+            </div>
+          </div>
+          <a href="https://chat-online.kepco.co.kr/kepcoHappyBot/" title="챗봇문의">
+            <img src="./images/icon/layout1/chatbot_icon.webp" alt="챗봇 메뉴" class="chatbot_btn" />
+          </a>
+      </aside>
+
+      <!-- layout2 영역 -->
+      <section class="layout2" id="cont1">
+        <!-- Services영역 -->
+        <div class="services"> 
+          <!-- 제목 -->
+          <div class="title">
+            <h2>Services</h2>
+            <span>일상에서 궁금했던 에너지 정보<br/>다양한 서비스로 만나세요</span>
+          </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper" >
+          <!-- 카드 -->
+          <div class="swiper-wrapper">
+            <!-- 카드1 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="https://online.kepco.co.kr/" title="한전ON">
+                  <img src="./images/images/layout2/Services_card1.png" alt="한전ON">
+                  <div class="card01_w">
+                    <h3>한전ON</h3>
+                    <p>전기요금 조회&#x00B7;납부, 명의변경 등 전기 관련<br/>고객서비스</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 카드2 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="https://en-ter.co.kr/main.do" title="에너지마켓플레이스">
+                  <img src="./images/images/layout2/Services_card2.png" alt="에너지마켓플레이스">
+                  <div class="card01_w">
+                    <h3>에너지마켓플레이스</h3>
+                    <p>에너지분야 비즈매칭 플랫폼</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 카드3 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="https://pp.kepco.co.kr/" title="파워플래너">
+                  <img src="./images/images/layout2/Services_card3.png" alt="파워플래너">
+                  <div class="card01_w">
+                    <h3>파워플래너</h3>
+                    <p>전기요금 조회&#x00B7;납부, 명의변경 등 전기 관련<br/>고객서비스</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 카드4 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="https://check.kepco.co.kr/login/login.do" title="파워체크 모바일">
+                  <img src="./images/images/layout2/Services_card4.png" alt="파워체크 모바일">
+                  <div class="card01_w">
+                    <h3>파워체크 모바일</h3>
+                    <p>고압 고객 검침 빅데이터 분석 및 수전설비,<br/>전기품질 관리 지원</p>
+                </div>
+                </a>
+              </div>
+            </div>
+            <!-- 카드5 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="https://plug.kepco.co.kr/" title="KEPCO PLUG">
+                  <img src="./images/images/layout2/Services_card5.png" alt="KEPCO PLUG">
+                  <div class="card01_w">
+                    <h3>KEPCO PLUG</h3>
+                    <p>전기차 충전소 위치, 실시간 충전기 상태 등<br/>서비스 제공</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 카드6 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="https://www.energyvalley.kr/cmm/main/mainPage.do" title="에너지밸리 플랫폼"></a>
+                <img src="./images/images/layout2/Services_card6.png" alt="에너지밸리 플랫폼">
+                <div class="card01_w">
+                  <h3>에너지밸리 플랫폼</h3>
+                  <p>에너지밸리 기업 지원을 위한 통합 정보<br/>제공</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 컨트롤 버튼 -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- 좌우 버튼 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </section>
+
+      <!-- layout3 영역 -->
+      <section class="layout3" id="cont2">
+        <!-- ESG영역 -->
+        <div class="esg">
+          <!-- 제목 -->
+          <article class="title title_w">
+            <h2>ESG</h2>
+            <span>더 나은 내일을 위한 우리의 약속으로<br/>
+              큰 변화를 만들어 나갑니다</span>
+          </article>
+          <!-- 원판 -->
+          
+          <!-- 선택 버튼 -->
+          <div class="esg_button">
+            <label for="E" class="slide e">
+              E
+            </label>
+            <label for="S" class="slide s">
+              S
+            </label>
+            <label for="G" class="slide g">
+              G
+            </label>
+          </div>
+          
+          <article id="esg_circle">
+            <div class="circle_img">
+                &nbsp;
+            </div>
+          </article>
+          
+          <!-- 설명 -->
+          <article class="esg_explain esg_explain_e">
+            <h3>Enviroment</h3>
+            <span>한국전력공사는 안정적인 전력 공급을 기본으로 친환경적인<br/>전력과 함께 지속가능한 내일을 만들어 나갑니다.</span>
+            <!-- 더보기 버튼 -->
+            <a href="https://www.kepco.co.kr/home/esg/environment/environmanage/conts.do" title="환경E" class="plus">
+              더보기
+            </a>
+          </article>
+          <article class="esg_explain esg_explain_s">
+            <h3>Social</h3>
+            <span>한국전력공사는 다양한 사회공헌 활동으로 모두가 함께<br/>상생하는 건강한 내일을 만들어 갑니다.</span>
+            <!-- 더보기 버튼 -->
+            <a href="https://www.kepco.co.kr/home/esg/society/contribution.do" title="사회S" class="plus">
+              더보기
+            </a>
+          </article>
+          <article class="esg_explain esg_explain_g">
+            <h3>Governance</h3>
+            <span>한국전력공사는 윤리경영 추진을 통해 체계적인 시스템을 구축하고,<br/>임직원 행동강령과 전담조직을 통해 공정하고 투명한 경영을 실현하고 있습니다.</span>
+            <!-- 더보기 버튼 -->
+            <a href="https://www.kepco.co.kr/home/esg/governance/ethic.do" title="지배구조G" class="plus">
+              더보기
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- layout4 영역 -->
+      <section class="layout4" id="cont3">
+        <div class="busniess">
+          <div class="title">
+            <!-- 제목 -->
+            <h2>Business Area</h2>
+            <span>안정적인 전력 공급부터 글로벌 신사업까지<br/>
+              미래 에너지 산업을 이끌어 갑니다</span>
+          </div>
+          <!-- 컨텐츠 -->
+          <article class="bs_area">
+            <!-- 1.송배전 사업 -->
+            <a href="https://www.kepco.co.kr/home/business/transbus.do" title="송배전 사업">
+              <div class="bs_box bs1">
+                <h3>송배전 사업</h3>
+                <span class="bs_txt">
+                  안전하고 깨끗한 전기가 우리의<br/>
+                  일상과 연결되기까지 신뢰도 높은<br/>
+                  전력계통을 통해 안정적 전력공급을<br/>
+                  목표로 하고 있습니다.
+                </span>
+                <img src="./images/icon/layout4/bs_icon01.png" alt="송배전 사업" class="bs_arrow" />
+              </div>
+            </a>
+            <!-- 중간선 -->
+            <div class="bs_line">&nbsp;</div>
+            
+            <!-- 2.판매·수요관리 -->
+            <a href="https://www.kepco.co.kr/home/business/salesbus.do" title="판매&#x00B7;수요관리">
+              <div class="bs_box bs2">
+                <h3>판매&#x00B7;수요관리</h3>
+                <span class="bs_txt">
+                  합리적인 요금으로 세계 최고 품질의<br/>
+                  전기를 제공하고, 전기사용 패턴<br/>
+                  최적화로 수요를 관리하고 있습니다.
+                </span>
+                <img src="./images/icon/layout4/bs_icon02.png" alt="판매&#x00B7;수요관리" class="bs_arrow" />
+              </div>
+            </a>
+            <!-- 중간선 -->
+            <div class="bs_line">&nbsp;</div>
+
+            <!-- 3.에너지신사업 -->
+            <a href="https://www.kepco.co.kr/home/business/newbus.do" title="에너지신사업">
+            <div class="bs_box bs3">
+              <h3>에너지신사업</h3>
+              <span class="bs_txt">
+                나를 위한 행동이 곧 지구를 위한<br/>
+                일이 되기까지 한국전력공사는<br/>
+                효율적인 에너지 생태계를 조성하고<br/>
+                지속가능한 비즈니스 모델을<br/>
+                실험하고 있습니다.
+              </span>
+              <img src="./images/icon/layout4/bs_icon03.png" alt="에너지신사업" class="bs_arrow" />
+            </div>
+            </a>
+            <!-- 중간선 -->
+            <div class="bs_line">&nbsp;</div>
+
+            <!-- 4.해외 사업 -->
+            <a href="https://www.kepco.co.kr/home/business/overseasbus.do" title="해외 사업">
+              <div class="bs_box bs4">
+                <h3>해외 사업</h3>
+                <span class="bs_txt">
+                  지속 가능한 발전을 위해 글로벌<br/>
+                  전력 네트워크를 구축하고, 에너지<br/>
+                  전환과 탄소 감축을 목표로 신사업<br/>
+                  확대와 수주 경쟁력 강화를 실현하고<br/>
+                  있습니다.
+                </span>
+                <img src="./images/icon/layout4/bs_icon04.png" alt="해외 사업" class="bs_arrow" />
+              </div>
+            </a>
+            <!-- 중간선 -->
+            <div class="bs_line">&nbsp;</div>
+
+            <!-- 5.연구개발 -->
+            <a href="https://www.kepco.co.kr/home/business/rndbus.do" title="연구개발">
+              <div class="bs_box bs5">
+                  <h3>연구개발</h3>
+                  <span class="bs_txt">
+                    새로운 국가 성장동력을<br/>
+                    확보하기위해 기술 개발 및 정책<br/>
+                    개선을 시행하고 신사업기반 구축을<br/>
+                    목표로 한 연구개발을 실시하고<br/>
+                    있습니다.<br/>
+                  </span>
+                  <img src="./images/icon/layout4/bs_icon05.png" alt="연구개발" class="bs_arrow"/>     
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+        <!-- layout5 영역 -->
+      <section class="layout5" id="cont4">
+          <!-- 제목 -->
+          <div class="l5_area">
+            <div class="title title_w">
+              <h2>Social Media</h2>
+            </div>
+            <!-- 컨텐츠 영역 -->
+            <article class="sm_area">
+
+              <!-- 영상1 -->
+              <div class="youtube no_border">
+                <!-- 썸네일 -->
+                <a href="https://www.youtube.com/watch?v=Ym9vW5BPVjQ" title="[1인가구 안부살핌].." class=".thumb_link">
+                  <div class= "thumb_size" id="thumb1">
+                    <!-- 소제목,캡코로고 -->
+                    <div class="s-title">
+                      <img src="./images/images/layout5/youtube_kepco_logo.png" alt="캡코로고" />
+                      <span>[1인가구 안부살핌] 홀로 계시는 부모님의..</span>
+                    </div>
+                    <img src="./images/icon/layout5/youtube_logo.png" alt="유튜브로고" class="youtube_logo" />
+                  </div>
+                </a>
+                <!-- 제목 -->
+                <a href="https://www.youtube.com/watch?v=Ym9vW5BPVjQ" title="[1인가구 안부살핌].." class="b-title">
+                  [1인가구 안부살핌] 홀로 계시는 부모님의<br/>안부, 한국전력이 살펴드립니다
+                </a>
+              </div> 
+
+              <!-- 영상2 -->
+              <div class="youtube">
+                <!-- 썸네일 -->
+                <a href="https://www.youtube.com/watch?v=6-kXyKbFO1Q" title="전기요금 청구서.." class=".thumb_link">
+                  <div class= "thumb_size" id="thumb2">
+                    <!-- 소제목,캡코로고 -->
+                    <div class="s-title">
+                      <img src="./images/images/layout5/youtube_kepco_logo.png" alt="캡코로고" />
+                      <span>전기요금 청구서, 어떻게 받고 있나요?..</span>
+                    </div>
+                    <img src="./images/icon/layout5/youtube_logo.png" alt="유튜브로고" class="youtube_logo" />
+                  </div>
+                </a>
+                <!-- 제목 -->
+                <a href="https://www.youtube.com/watch?v=6-kXyKbFO1Q" title="전기요금 청구서.." class="b-title">
+                  전기요금 청구서, 어떻게 받고 있나요?<br/>이송경이 알려주는 꿀팁!
+                </a>
+              </div>
+
+              <!-- 영상3 -->
+              <div class="youtube">
+                <!-- 썸네일 -->
+                <a href="https://www.youtube.com/watch?v=EcvPcKUDt88" title="한전, 탄소중립의 판을.." class=".thumb_link">
+                  <div class= "thumb_size" id="thumb3">
+                    <!-- 소제목,캡코로고 -->
+                    <div class="s-title">
+                      <img src="./images/images/layout5/youtube_kepco_logo.png" alt="캡코로고" />
+                      <span>[Zero For Green] 한전, 탄소중립의 판을..</span>
+                    </div>
+                    <img src="./images/icon/layout5/youtube_logo.png" alt="유튜브로고" class="youtube_logo" />
+                  </div>
+                </a>
+                <!-- 제목 -->
+                <a href="https://www.youtube.com/watch?v=EcvPcKUDt88" title="한전, 탄소중립의 판을.." class="b-title">
+                  [Zero For Green] 한전, 탄소중립의 판을<br/>깔다! 한국전력X박다울♬거문장난감
+                </a>
+              </div>
+              <!-- 바로가기 버튼 -->
+              <a href="https://www.youtube.com/@kepconewmedia/featured" title="유튜브 바로가기" class="go_youtube">
+                YouTube 바로가기
+                <img src="./images/icon/layout5/youtube_arrow.png" alt="화살표" />
+              </a>
+            </article>
+          </div>
+      </section>
+
+        <!-- layout6 영역 -->
+      <section class="layout6" id="cont5">
+        <div id="l6_area">
+          <!-- 제목 -->
+          <article class="title title_w">
+            <h2>News room</h2>
+          </article>
+          <!-- 컨텐츠 영역 -->
+          <article>
+            <!-- 위영역 -->
+            <div class="cont">
+              <!-- 뉴스1 -->
+              <div id="news1" class="long_cont">
+                <!-- 설명 -->
+                <a href="https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do" title="자세히보기" class="news_btn">
+                  <div class="news_txt_box">
+                    <p class="news_txt">한전, 신용보증기금과 협력하여 ESG<br/>활성화에 나서...</p>
+                    <!-- 자세히보기 -->
+                    <span class="news_move">자세히보기</span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- 뉴스2 -->
+              <div id="news2" class="short_cont">
+                <!-- 설명 -->
+                <a href="https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do" title="자세히보기">
+                  <div class="news_txt_box">
+                    <p class="news_txt">"DC 배전 기술로 100년 전력망<br/>역사 바꾼다"...</p>
+                    <!-- 자세히보기 -->
+                    <span class="news_move">자세히보기</span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- 뉴스3 -->
+              <div id="news3" class="long_cont">
+                <!-- 설명 -->
+                <a href="https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do" title="자세히보기" class="news_btn">
+                  <div class="news_txt_box">
+                    <p class="news_txt">한전, 2025년도 하반기 신입사원<br/>620명 채용...</p>
+                    <!-- 자세히보기 -->  
+                    <span class="news_move">자세히보기</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- 아래영역 -->
+            <div class="cont down-cont">
+              <!-- 뉴스4 -->
+              <div id="news4" class="short_cont">
+                <!-- 설명 -->
+                <a href="https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do" title="자세히보기" class="news_btn">
+                  <div class="news_txt_box">
+                    <p class="news_txt news4">한전, 美 원전시장 진출 발판 마련</p>
+                  <!-- 자세히보기 -->
+                    <span class="news_move">자세히보기</span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- 뉴스5 -->
+              <div id="news5" class="long_cont">
+                <!-- 설명 -->
+                <a href="https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do" title="자세히보기" class="news_btn">
+                  <div class="news_txt_box">
+                    <p class="news_txt">“갈등 불씨 된 ‘전기요금 차등제’…<br/>내년 상반기 시행 불투명”...</p>
+                    <!-- 자세히보기 -->
+                    <span class="news_move">자세히보기</span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- 뉴스6 -->
+              <div id="news6" class="short_cont">
+                <!-- 설명 -->
+                <a href="https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do" title="자세히보기" class="news_btn"></a>
+                  <div class="news_txt_box">
+                    <p class="news_txt">한전, 전북 서남권 해상풍력 시범<br/>사업 본격 추진...</p>
+                    <!-- 자세히보기 -->
+                    <span class="news_move">자세히보기</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+        <!-- layout7 영역 -->
+        <section class="layout7">
+        <!-- 실시간 전력 -->
+          <article class="l7_box1">
+            <!-- 상단 제목 -->
+            <div class="l7_title">
+              <h3>실시간 전력 수급현황</h3>
+              <!-- 새로고침 시간 -->
+              <span id="time">&nbsp;</span>
+            </div>
+            <!-- 더보기 버튼 -->
+            <a href="https://new.kpx.or.kr/powerinfoSubmain.es?mid=a10606030000" tilte="더보기" class="plus l7_btn">
+              더보기
+            </a>
+
+            <!-- 하단 컨텐츠1 -->
+            <div class="l7_cont">
+              <!-- 컨텐츠1 -->
+              <div class="l7_img">
+                <img src="./images/images/layout7/img1.png" alt="실시간 전력 수급 현황" />
+              </div>
+              <!-- 컨텐츠2 -->
+              <div>
+                <!-- 박스1 -->
+                <div class="box box1">
+                  <h4>공급 능력</h4>
+                  <div class="l7_s_box">
+                    100,450 <span class="txt_g">MW</span>
+                  </div>
+                </div>
+                <!-- 박스2 -->
+                <div class="box box2">
+                  <h4>현재 부하</h4>
+                  <div class="l7_s_box">
+                    70,620 <span class="txt_g">MW</span>
+                  </div>
+                </div>
+                <!-- 박스3 -->
+                <div class="box box3">
+                  <h4>공급 예비력</h4>
+                  <div class="l7_s_box">
+                    29,850 <span class="txt_g">MW</span>
+                  </div>
+                </div>
+                <!-- 박스4 -->
+                <div class="box box4">
+                  <h4>공급예비율</h4>
+                  <div class="l7_s_box">
+                    42.2 <span class="txt_g">%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- 전국 본부 -->
+          <article class="l7_box2">
+            <div class="l7_title">
+              <h3>전국 본부&#x00B7;사업소 찾기</h3>
+            </div>
+            <a href="https://www.kepco.co.kr/home/about/locations.do" tilte="더보기" class="plus l7_btn">
+              더보기
+            </a>
+            <img src="./images/images/layout7/img2.png" alt="전국 본부 사업소 찾기" />
+          </article>
+        </section>
+
+        <!-- top 버튼 -->
+        
+        <!-- qr코드 -->
+        <article class="qr_box">
+          <div class="qr_banner">
+            <p class="blue">전기 요금 <span class="red">문의는?</span></p>
+            <img src="./images/logo/ON_logo.png" alt="한전ON" class="on_logo" />
+            <!-- 안드로이드 -->
+            <div class="qr_txt qr_txt1">
+              <h5>안드로이드</h5>
+              <p>어플 다운로드<br/>바로가기</p>
+            </div>
+            <!-- qr들어가는자리 -->
+            <img src="./images/images/layout7/qr_code.png" alt="안드로이드 다운로드" class="adr_code">
+            <!-- 아이폰 -->
+            <div class="qr_txt qr_txt2">
+              <h5>아이폰</h5>
+              <p>어플 다운로드<br/>바로가기</p>
+            </div>
+            <!-- qr들어가는자리 -->
+              <img src="./images/images/layout7/qr_code.png" alt="아이폰 다운로드" class="ios_code">
+          </div>
+        </article>
+      </div>  
+    </main>
+
+    <!-- 푸터 영역 -->
+    <footer>
+      <!-- top_btn -->
+      <article class="go_top">
+        <a href="#top" title="맨위로 이동하기" id="top_btn">
+          <img src="./images/icon/header/side_btn.png" alt="화살표" />
+        </a>
+      </article>
+      <div class="footer_cont">
+        <!-- 하단로고 -->
+        <h2>
+          <a href="index.html" title="처음으로 바로가기">
+            <div class="footer_logo">
+              <img src="./images/logo/footer_logo.png" alt="하단로고" />
+            </div>
+          </a>
+        </h2>
+        <div class="footer_address">
+          <address>
+            (우) 58322 전라남도 나주시 전력로 55 (빛가람동 120) 24시간 전기상담고객센터(전기상담/고장 신고) : <span class="b_bold">국번 없이 000(유료)</span>
+          </address>
+          <nav>
+            <ul class="footer_nav">
+              <li>
+                <a href="#" title="개인정보처리방침" class="b_bold">
+                  개인정보처리방침
+                </a>
+              </li>
+              <!-- | -->
+              <li class="contour">&#x007C;</li>
+
+              <li>
+                <a href="#" title="영상정보처리기기">
+                  영상정보처리기기 운영 &#x00B7; 관리방침
+                </a>
+              </li>
+              <!-- | -->
+              <li class="contour">&#x007C;</li>
+
+              <li>
+                <a href="#" title="이용약관">
+                  이용약관
+                </a>
+              </li>
+              <!-- | -->
+              <li class="contour">&#x007C;</li>
+
+              <li>
+                <a href="#" title="법적고지">
+                  법적고지
+                </a>
+              </li>
+              <!-- | -->
+              <li class="contour">&#x007C;</li>
+
+              <li>
+                <a href="#" title="홈페이지 이용문의">
+                  홈페이지 이용문의
+                </a>
+              </li>
+              <li class="c_kepco">&copy; 2025 KEPCO. All Rights Reserved.</li>
+            </ul>
+          </nav>
+        </div>
+        
+        <!-- family site -->
+        <select name="siteUrl" id="url" onchange="siteUrl(a)">
+          <option value="none">Family site</option>
+          <option value="https://www.khnp.co.kr/main/index.do">한국수력원자력(주)</option>
+          <option value="https://www.koenergy.kr/kosep/fr/main.do">한국남동발전(주)</option>
+          <option value="https://www.komipo.co.kr/kor/main/main.do">한국중부발전(주)</option>
+          <option value="https://www.iwest.co.kr/sites/iwest/index.do">한국서부발전(주)</option>
+          <option value="https://www.ewp.co.kr/kor/main/">한국동서발전(주)</option>
+        </select>
+        
+        <div class="footer_sns">
+          <!-- 인스타 -->
+          <a href="https://www.instagram.com/accounts/login/?next=%2Fiamkepco%2F&source=omni_redirect" title="인스타그램 바로가기">
+            <img src="./images/icon/footer/insta_footer_icon.svg" alt="인스타그램">
+          </a>
+          <!-- 유튜브 -->
+          <a href="https://www.youtube.com/@kepconewmedia" title="유튜브 바로가기">
+            <img src="./images/icon/footer/youtube_footer_icon.svg" alt="유튜브">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </form>
+
+  <!-- 스크립트 영역 -->
+  <!-- swaipe -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode:true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation:{
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <!-- time 스크립트 -->
+  <script src="./script/time.js"></script>
+
+  <script>
+    const gnb = document.getElementById("t_menu");
+    const header = document.getElementById("header");
+    const logo = document.getElementById("logo_img");
+    const txt_color = document.querySelectorAll('.r_menu .r_menu_text, .r_menu .fa-solid');
+
+    //gnb에 마우스 오버시 배경색 적용하기
+    gnb.addEventListener('mouseenter', function(){
+      header.classList.add('w_bg');
+      header.style.height='400px';
+      logo.src="./images/logo/footer_logo.png";
+      txt_color.forEach(el => {
+        el.style.color = "#333";
+      });
+    });
+
+    //gnb에 마우스 아웃시 배경색 제거하기
+    gnb.addEventListener('mouseleave', function(){
+      // 헤더변수에 해당 서식을 제거한다.
+      header.classList.remove('w_bg');
+      header.style.height='100px';
+      logo.src="./images/logo/header_logo.png";
+
+      txt_color.forEach(el => {
+        el.style.color = "#fff";
+      });
+    });
+
+    // layout4 아이콘 변경
+  const bs_box = document.querySelectorAll('.bs_box');
+
+  bs_box.forEach(box => {
+  // 이 박스 안의 아이콘 찾기
+    const icon = box.querySelector('.bs_arrow');
+    if (!icon) return;
+
+  // 원래 src를 data 속성으로 1회 저장
+    if (!icon.dataset.orig) {
+      icon.dataset.orig = icon.getAttribute('src'); // 원래 값 그대로 보관
+    }
+
+    box.addEventListener('mouseenter', () => {
+    // hover 시 보여줄 이미지 (공통)
+      icon.src = "./images/icon/layout4/bs_arrow.png";
+    });
+
+    box.addEventListener('mouseleave', () => {
+    // 각자 저장해둔 원본으로 복구
+      icon.src = icon.dataset.orig;
+    });
+  });
+
+  //메인메뉴 클랙시 해당 이미지 박스요소가 스크롤 되면서 상단으로 올라오게
+  const menuLinks = document.querySelectorAll('#side_nav> ul > li > a')
+
+  for(let i=0; i < menuLinks.length; i++){
+
+    menuLinks[i].addEventListener('click',function(e){
+      console.log(i);
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+
+      const targetSection = document.getElementById(targetId);
+
+      console.log(targetSection);
+
+      let headerHeight = 150;
+      if (targetId === "cont1") {
+        headerHeight = 150;
+      }else if (targetId === "cont2") {
+        headerHeight = 80;
+      }else if (targetId === "cont3") {
+        headerHeight = 80;
+      }else if(targetId === "cont4"){
+        headerHeight = 50;
+      }else{
+        headerHeight = -100;
+      }
+
+      window.scrollTo({
+        top:targetSection.offsetTop + headerHeight,
+        behavior:"smooth"
+      });
+    });
+  }
+  
+  // 탑버튼 클릭시 부드럽게 이동
+      document.querySelector('a[href="#top"]').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+    // 탑버튼 일정 화면에서 보이게
+    const top_btn = document.getElementById('top_btn');
+
+    // 2.화면 스크롤시 top버튼 보이게
+    window.addEventListener('scroll', function(e){
+      
+      let scrollY = this.scrollY;
+      console.log(scrollY);
+
+      if(scrollY >= 800){ //화면 스크롤이 1200이상이면 top버튼 보이게
+        // top_btn.style.display='block'
+        top_btn.style.right="115px"
+        top_btn.style.opacity='1';
+      }else{//화면스크롤이 1200보다 작으면 top버튼 숨기게
+        // top_btn.style.display='none';
+        top_btn.style.right="-170px"
+        top_btn.style.opacity='0';
+      }
+    });
+  </script>
+  <!-- 새로고침이 위에서 시작 -->
+  <!-- <script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }; -->
+</script>
+</body>
+</html>
