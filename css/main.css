@@ -192,6 +192,7 @@ display: none;
     width: 100%;
     /* background-color: #777; */
     transition: 0.5s;
+    overflow: hidden;
 }
 
 .esg{
